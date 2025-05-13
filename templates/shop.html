@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop | Fashion Dress Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f47c7c;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #f47c7c;
+    }
+
+    .shop-header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .shop-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      font-size: 1rem;
+      color: #888;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .price {
+      color: #e77;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .card button {
+      background-color: #d3e5df;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card button:hover {
+      background-color: #c0d9d2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Fashion Dress</div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Shop Header -->
+  <div class="shop-header">
+    <h1>Explore Our Shop</h1>
+    <p>Find the perfect outfit for any occasion</p>
+  </div>
+
+  <!-- Product Listings -->
+  <div class="card-container">
+    <div class="card">
+      <h4>Dress 5</h4>
+      <h3>Red Party Dress</h3>
+      <p class="price">$45.00</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <h4>Dress 6</h4>
+      <h3>Boho Summer Dress</h3>
+      <p class="price">$34.99</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <h4>Dress 7</h4>
+      <h3>Lace Midi Dress</h3>
+      <p class="price">$54.99</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <h4>Dress 8</h4>
+      <h3>Formal Work Dress</h3>
+      <p class="price">$39.99</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>

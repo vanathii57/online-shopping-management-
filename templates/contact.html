@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Fashion Dress</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f47c7c;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #f47c7c;
+    }
+
+    .contact-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background-color: #f47c7c;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #e96b6b;
+    }
+
+    .contact-info {
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Fashion Dress</div>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart 🛒</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+
+    <!-- Fixed: Added action and method attributes -->
+    <form class="contact-form" action="/contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> support@fashiondress.com</p>
+      <p><strong>Phone:</strong> +1 234 567 890</p>
+      <p><strong>Address:</strong> 123 Fashion Street, Style City, NY 10001</p>
+    </div>
+  </div>
+
+</body>
+</html>
